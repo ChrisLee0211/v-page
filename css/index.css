@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "微软雅黑"
+}
+/* 第一区域 */
+.Area-one{
+    width: 100%;
+    background: #B2C5CC ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-one{
+    width: 100%;
+    color:#757575 ;
+    display: flex;
+    justify-content: center;
+}
+.nav-one p{
+    margin:20px 30px;
+    cursor: pointer;
+    transition: color 1s linear
+}
+.nav-one p:hover{
+    color: white
+}
+/* 第一区域：导航兼容样式 */
+.nav-one02{
+    width:100%;
+    height: 30px;
+    background-color: rgb(80, 126, 142);
+    display:none;
+    z-index: 100;
+}
+.nav-one02 p:first-of-type{
+    flex-grow: 15;
+    font-size: 12px;
+    line-height: 30px;
+    color:white;
+    text-align: center;
+    margin-left: 24px;
+
+}
+.nav-one02 p:last-of-type{
+    flex-grow:1;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: white
+}
+/* 第一区域，兼容样式：下滑菜单 */
+.menu{
+    width:100%;
+    background-color: rgb(80, 126, 142);
+    position: relative;
+    top:-205px;
+    z-index: 99;
+    transition: top 0.5s linear
+}
+.menu p{
+    text-align: center;
+    color:white ;
+    font-size: 12px;
+    padding:6px;
+    border-bottom: 1px solid #757575 ;
+}
+.show{
+    position: relative;
+    top:0px;
+}
+/* 第一区域通用样式 */
+.img-one{
+    width:130px;
+    height:127px;
+    background: url("../images/1.png") no-repeat center center;
+    margin-top: 90px;
+    margin-bottom: 70px
+}
+.word-one{
+    color:white;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+.btn-one{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: white;
+    margin-bottom: 200px;
+    transition: background 1s linear
+}
+.btn-one:hover{
+    background:black;
+    color:white
+}
+/* 第二区域 */
+.Area-two{
+    width:100%;
+    background-color: white;
+    display: flex;
+    justify-content: center
+}
+.item-two{
+    width:25%;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+    color:#bababa ;
+    font-size: 12px;
+    border-bottom: 1px solid #bababa ;
+    transition: color 1s linear
+}
+.item-two:hover{
+    color:#545454;
+}
+/* 第三区域 */
+.Area-three{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center
+}
+.Area-three p:first-of-type{
+    font-size:20px;
+    margin-top: 70px;
+    margin-bottom: 30px
+}
+.Area-three p:last-of-type{
+    width:50%;
+    font-size: 10px;
+    color:#bababa;
+    line-height: 25px;
+    margin-bottom: 70px;
+}
+/* 第四区域 */
+.Area-four{
+    width:100%;
+    height:70px;
+    background:#c6c6c6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.title-four{
+    font-size: 14px;
+    color: #545454;
+    margin-left: 77px;
+ 
+}
+.addr-four{
+    font-size: 12px;
+    color:#545454;
+    margin-right:77px;
+}
+.addr-four a{
+    color:black;
+    font-weight: bold
+}
+/* 第五区域 */
+.Area-five{
+    width:100%;
+    padding-top: 30px;
+    background: url(../images/bg.jpg) no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.title-five{
+    width:80%;
+    height:30px;
+    font-size: 17px;
+    text-align: left
+}
+.img-five{
+    width:80%;
+    height:70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.img-five img{
+    display: block;
+    width: 32%;
+    height: 160px;
+    margin-bottom: 10px;
+}
+.img-five img:hover{
+    width:33%;
+    height:170px;
+}
+/* 第六区域 */
+.Area-six{
+    width:100%;
+    padding:15px 0px;
+    text-align: center;
+    background-color: #c6c6c6;
+    font-size: 12px;
+}
+
+/* 兼容性样式 */
+@media screen and (max-device-width:375px) {
+    /* 第一区域变化样式 */
+    .nav-one{
+    width: 100%;
+    color:#757575 ;
+    display: none;
+    justify-content: center;
+    }
+    .img-one{
+        margin-top:40px
+    }
+    .nav-one02{
+    width:100%;
+    height: 30px;
+    background-color: rgb(80, 126, 142);
+    display: flex
+    }
+    /* 第四区域 */
+    .Area-four{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    }
+    .title-four{
+    font-size: 14px;
+    color: #545454;
+    margin-left: 0;
+    margin-bottom: 10px;
+    }
+    .addr-four{
+    font-size: 12px;
+    color:#545454;
+    margin-right:0
+    }
+    /* 第五区域 */
+    .img-five img{
+    display: block;
+    width: 48%;
+    height: 90px;
+    margin-bottom: 10px;
+    }
+    .img-five img:hover{
+    width:50%;
+    height:100px;
+    }
+
+}
